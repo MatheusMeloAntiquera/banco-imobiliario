@@ -1,6 +1,13 @@
 import Jogador from "./Jogador";
 
 export default class Propriedade {
-    posicao: number;
-    proprietario: Jogador;
+
+    proprietario?: Jogador;
+    valorCompra: number;
+    valorAluguel: number;
+
+    constructor(valorCompra: number, valorAluguel: number) {
+        this.valorCompra = valorCompra;
+        this.valorAluguel = valorAluguel;
+    }
 }
