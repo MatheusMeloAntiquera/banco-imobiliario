@@ -71,3 +71,7 @@ Será retornado o vencedor, o número de rodadas jogadas e a lista do jogadores 
    ]
 }
 ```
+
+## CI
+
+Foi implementado um CI simples onde será realizado os testes da aplicação nas versões 14, 15 e 16 do Node
