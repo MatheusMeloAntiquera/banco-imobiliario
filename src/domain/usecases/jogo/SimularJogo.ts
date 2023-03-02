@@ -53,11 +53,11 @@ export default class SimularJogo {
         }
     }
 
-    public jogarDado(): number {
+    private jogarDado(): number {
         return Math.floor(Math.random() * 5) + 1;
     }
 
-    public defineVencedorMaxRodadas(jogadoresFinalista: Array<Jogador>): Jogador {
+    private defineVencedorMaxRodadas(jogadoresFinalista: Array<Jogador>): Jogador {
         //Primeiro ordena por saldo
         jogadoresFinalista.sort(this.ordernarPorSaldo);
         let max: number = 0;
@@ -70,14 +70,14 @@ export default class SimularJogo {
             vencedor)
     }
 
-    public ordernarPorSaldo(jogadorA: Jogador, jogadorB: Jogador) {
+    private ordernarPorSaldo(jogadorA: Jogador, jogadorB: Jogador): 1 | -1 | 0 {
         if (jogadorA.saldo < jogadorB.saldo) {
             return 1;
         }
         return jogadorA.saldo > jogadorB.saldo ? -1 : 0;
     }
 
-    public defineProximaCasa(jogador: Jogador) {
+    private defineProximaCasa(jogador: Jogador) {
         let proximaCasa = this.jogarDado() + jogador.posicao;
         if (proximaCasa > 19) {
             proximaCasa = proximaCasa - 19;
