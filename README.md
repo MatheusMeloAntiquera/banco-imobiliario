@@ -1,4 +1,4 @@
-# Simulador de Jogo Imobiliário
+# Simulador de Banco Imobiliário
 
 ## Pré-requisitos
 - Node - versão LTS se possível
@@ -10,9 +10,14 @@ npm install
 ```
 
 ## Para subir a aplicação e desenvolver 
+> :warning: Antes de iniciar o serviço, verifique se a porta 8080 não está em uso
 ```shell
 npm run start
 ```
+
+Aplicação ficará rodando em:
+
+```http://localhost:8080```
 
 ## Para rodar os testes
 ```shell

@@ -3,7 +3,6 @@ import rewire from 'rewire';
 import { stub } from "sinon";
 import Jogador, { Estrategia } from "../../../src/domain/entities/Jogador";
 import Propriedade from "../../../src/domain/entities/Propriedade";
-// import SimularJogo from "../../../src/domain/usecases/jogo/SimularJogo";
 
 //Necessário usar o rewire para testar metodo privados
 const simulaJogoModule = rewire("../../../src/domain/usecases/jogo/SimularJogo").__get__('SimularJogo');
